@@ -108,7 +108,7 @@ ul li {
 }
 .media-icons i {
   font-size: 26px;
-  padding: 10px 20px;
+  padding: 10px 5px;
 }
 .info-elements {
   font-size: 26px !important;
@@ -391,6 +391,10 @@ li p {
 .footer-wrapper {
   display: flex;
   margin: 0px auto;
+  margin-top: 40px;
+}
+.footer-wrapper .login-icons {
+  margin: 0px 10px 10px 30px;
 }
 .footer-wrapper .wrapper-row-list {
   display: flex;
@@ -444,6 +448,7 @@ li p {
   font-family: "Poppins", sans-serif;
   color: #262835;
   margin-top: 1px;
+  margin-bottom: 10px;
 }
 .wrapper-row-list li p {
   color: #666980 !important;
@@ -451,6 +456,7 @@ li p {
   font-family: "Roboto" monospace;
   width: 320px;
   font-weight: 100 !important;
+  margin: 0px;
 }
 .extended-container {
   margin-top: 0px auto;
@@ -496,17 +502,15 @@ footer {
   }
   .col1 {
     flex-grow: 1;
+    padding-top: 10px;
   }
   footer {
     flex-direction: column;
     margin: 0px auto;
   }
-  footer .policies {
-    margin: 0px auto;
-  }
+
   footer .policies a {
     text-align: center;
-    margin-right: 0x auto;
   }
   footer .copyrights {
     text-align: center;
@@ -568,8 +572,14 @@ footer {
     font-weight: 400 !important;
     font-family: "Poppins", sans-serif;
     color: #666980;
+    flex-direction: inherit;
   }
   nav {
     display: block;
+  }
+  input::placeholder {
+    font-size: 21px;
+    margin-left: 15px;
+    padding-left: 10px;
   }
 }
