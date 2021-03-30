@@ -1,0 +1,512 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-icon">
+          <a href="https://www.customerlabs.com/">
+            <img
+              src="./Assets/cl-logo-1.png"
+              style="margin-top: 25px; width: 350px"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>Products</li>
+            <li>Vedios</li>
+            <li>What's new</li>
+            <li>Blog</li>
+            <li>Login</li>
+
+            <li><button>Get Started</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="title">
+        <h1><b>Implement Facebook Conversion API (Server Side API)</b></h1>
+        <div class="title-info">
+          <div class="ref-info">
+            <div class="date-info"><p>March 29</p></div>
+            <div class="author-info"><p>Raja Rajan</p></div>
+          </div>
+          <div class="media-icons">
+            <i class="fab fa-google" style="color: red"></i>
+            <i class="fab fa-facebook-f" style="color: blue"></i>
+            <i class="fab fa-twitter" style="color: lightblue"></i>
+            <i class="fab fa-linkedin-in" style="color: royalblue"></i>
+          </div>
+        </div>
+      </div>
+      <div class="implentaion-img">
+        <img
+          src="./Assets/Implement-FB-Conversion-API.png.webp"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
+      <div class="info-elements">
+        <span
+          >This guide will serve you as a go-to-guide on Facebook conversion
+          API.
+        </span>
+        <p>
+          Before diving deep into the guide, let me be clear. This is not just
+          an informative guide on “What is Facebook Conversion API”. Yeah, We do
+          cover what is Conversion API, Why is it trending, and the happenings
+          around Facebook Conversion API.
+        </p>
+        <p>
+          But, you’re also going to see strategies and use cases on Facebook
+          Conversion API.
+        </p>
+        <p>
+          If you have plans to start using Facebook Conversion API in 2021, then
+          you’ll love this guide
+        </p>
+        <h2><b>Facebook Conversion API</b></h2>
+        <p>
+          Facebook Conversion API primarily evolved from Server-to-Server API
+          lets advertisers send web events from their servers to Facebook server
+          and not through Javascript, which in turn helps optimize the Facebook
+          Ad campaigns.
+        </p>
+        <h3>Why the sudden hype on Facebook Conversion API</h3>
+        <p>
+          A vast majority of advertisers track their visitors online by placing
+          third-party cookies on web browsers. With a focus on consumer privacy
+          first, GDPR and other privacy regulations indicate that in the future
+          tracking consumers using third-party cookies will no longer be
+          available.
+        </p>
+        <p>
+          Along with the privacy concerns, Apple iOS 14 update is all set to
+          disrupt Facebook Ads Targeting.
+        </p>
+        <p>
+          The latest Apple iOS 14 update includes a tracking prompt, which lets
+          users know what the app will track and permission opt-in to access the
+          user data for advertisements and other tracking purposes.
+        </p>
+        <div class="elementor-img">
+          <img src="./Assets/Twitter.jpg.webp" alt="" />
+        </div>
+        <p>
+          The latest Apple iOS 14 update includes a tracking prompt, which lets
+          users know what the app will track and permission opt-in to access the
+          user data for advertisements and other tracking purposes.
+        </p>
+        <p>
+          Knowing these privacy issues, Facebook has been working on alternate
+          solutions to fix these privacy problems in compliance with user
+          privacy regulations. Facebook has now come up with Conversion API/
+          /Server-to-Server API that allows businesses to send events from their
+          server to Facebook.
+        </p>
+        <p>
+          Before diving into the Facebook Conversion API specifics. Let’s
+          provide an overview of Event Match Quality and its direct impact on
+          your Ad campaign performance
+        </p>
+        <h2>What is Event Match Quality</h2>
+        <p>
+          Event Match Quality indicates how effective is the customer
+          information sent from your server is at matching event instances to a
+          Facebook account. High-quality event matching may improve ads
+          attribution and performance.
+        </p>
+        <h3>How is it calculated ?</h3>
+        <p>Here’s how Event Match Quality is calculated</p>
+        <div class="elementor-list">
+          <ul>
+            <li>Customer information parameters received from your server</li>
+            <li>Quality of the information received</li>
+            <li>
+              Percent of event instances that are matched to a Facebook account.
+            </li>
+          </ul>
+        </div>
+        <h3>How it works ?</h3>
+        <p>Event Match Quality helps assess</p>
+        <div class="elementor-list">
+          <ul>
+            <li>
+              Quality of customer information sent to match events to the
+              Facebook account and
+            </li>
+            <li>
+              Customer information parameter set up in the Facebook account
+            </li>
+          </ul>
+        </div>
+        <p>
+          Customer information parameters help you match your events to a
+          Facebook account so you can attribute conversions to your ads and
+          deliver them to people who are most likely to make a conversion.
+        </p>
+        <p>
+          You’ll be able to view event match quality by logging into your
+          Facebook Business Manager > Events Manager > Choose Pixel
+        </p>
+        <div class="elementor-img-pixel">
+          <img
+            src="./Assets/Facebook-Conversion-API-Event-Match-Quality.png.webp"
+          />
+        </div>
+        <div class="elementor-widget-container">
+          <div class="elementor-widget-info">
+            <h2>
+              Integrate your Website with Facebook analytics through Facebook
+              Conversion API (server side API)
+            </h2>
+            <p>
+              Adblockers and other protocols set by browsers have started
+              blocking requests made by Facebook. Along with this Facebook has
+              started using aggregated event measurement to prioritize events
+              fired by pixel from the website.
+            </p>
+            <p>
+              To mitigate these, the best practice is to start sending the data
+              through a server.
+            </p>
+          </div>
+          <div class="elementor-eventracker-ifo">
+            <h3>
+              Creating events on the website using a no-code event tracker:
+            </h3>
+            <p>
+              We use our no-code event tracker to track the events on the
+              website and push the events data through server-side API /
+              Facebook Conversion API.
+            </p>
+            <p>
+              It just takes few clicks to choose elements to track and capture
+              data
+            </p>
+            <div class="elemntor-eventtracker-img">
+              <img
+                src="./Assets/How-Facebook-Conversion-API-works.jpg.webp"
+                alt=""
+              />
+            </div>
+            <p>
+              As soon as the event is configured, the event data will start
+              firing to the Facebook pixel. However, if you’d like to send the
+              data through server-side or Facebook Conversion API, you just have
+              to toggle between the on and off switches.
+            </p>
+            <p>
+              In just a few steps you can enable Facebook on the destination
+              part
+            </p>
+            <div class="event-tracker-ul">
+              <ul>
+                <li>Copy-paste your Facebook pixel id</li>
+                <li>
+                  Authenticate Facebook and switch on the server-side send data.
+                </li>
+              </ul>
+            </div>
+            <div class="elementor-tracker-img1">
+              <img
+                src="./Assets/Facebook-Conversion-API-Customer-Labs-No-code-Event-Tracker-Authentication-1536x1213.png"
+                alt=""
+              />
+            </div>
+            <h3>Mapping the Facebook fields to improve Event Quality:</h3>
+            <p>
+              Map the Facebook fields with the data collected. This data mapping
+              helps Facebook match the audience data sent from the server and
+              improves your event quality score
+            </p>
+            <div class="elementor-tracker-img2">
+              <img src="./Assets/evetntrack-img2.webp" alt="" />
+            </div>
+            <h3>Switching off client-side and on server-side</h3>
+            <p>
+              Finally, you should switch on the event you’d like to send from
+              the server-side. Once you do that, Facebook pixel will start
+              receiving the data via Conversion API.
+            </p>
+            <div class="elementor-tracker-img3">
+              <img src="./Assets/eventtrack-ims3.webp" alt="" />
+            </div>
+            <h3>Customizing Facebook event data to show personalised Ads</h3>
+            <p>
+              If you want to customize event data for eg: variables and content
+              IDs, you can open the code window and write a call back function
+              that allows you to customize the event the way you want.
+            </p>
+            <div class="elementor-tracker-img4">
+              <img src="./Assets/eventtrack-img4.webp" alt="" />
+            </div>
+            <p>Important concepts to improve match rate:</p>
+            <h3>Important concepts to improve match rate:</h3>
+            <p>
+              CustomerLabs CDP assigns an external ID to every single visitor
+              and we collect IP address, FBC, FBP, user agent, parameters.
+            </p>
+            <p>
+              While sending data to Facebook, we use these IDs to increase the
+              match rate and with this automated process set-up, we’ve seen a
+              stark 2-3x increase in match rates.
+            </p>
+            <p>
+              The above process is automated, there’s no need to set up
+              anything.
+            </p>
+            <div class="elementor-improve-img">
+              <img src="./Assets/improv-img.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <h3>
+          Integrate your CRM With Facebook Analytics through FB conversion API
+          (server side API)
+        </h3>
+        <p>
+          In fact, Facebook conversion API lets us, marketers focus on
+          full-funnel metrics unlike earlier. We can now push the data from your
+          server and CRM to map the entire funnel.
+        </p>
+        <p>
+          It is important to note while sending the data from your CRM the
+          events should include as many parameters as possible to match the
+          event to a particular Facebook account.
+        </p>
+        <p>
+          It is important to note while sending the data from your CRM the
+          events should include as many parameters as possible to match the
+          event to a particular Facebook account.
+        </p>
+        <p>
+          The below image is an example of how an event can be mapped to a
+          particular user. In this instance, we are bringing the data from
+          Salesforce, and mapping the user identity as email and other data
+          received are identified as event attributes.
+        </p>
+        <div class="elementor-CRM-img">
+          <img src="./Assets/IntegrateCRM-img.webp" alt="" />
+        </div>
+        <h3>Mapping event attributes</h3>
+        <p>
+          Once the event is named, you’ll start receiving data from Salesforce
+          which can be mapped as event attributes.
+        </p>
+        <div class="elementor-mapping-img">
+          <img src="./Assets/Mapping-img.webp" alt="" />
+        </div>
+        <p>
+          CustomerLabs CDP will build an event based on the input data and
+          transform the event in a way that Facebook Conversion API accepts
+        </p>
+        <p>
+          As you can see below, CustomerLabs brings the data from Chargebee,
+          CRM, and other marketing systems and syncs the data with Facebook.
+        </p>
+        <p>
+          In the dashboard given, you have the option to toggle between the on
+          and off switches to decide which event to be sent and what’s to be
+          excluded.
+        </p>
+        <div class="elementor-tracker-img-last">
+          <img src="./Assets/trackerlast-img.webp" alt="" />
+        </div>
+        <p>
+          You can access the event data on Facebook with all the event, user &
+          account attributes under parameters.
+        </p>
+        <h3>Facebook Event Data</h3>
+        <p>
+          Facebook receives the data in realtime, with all the
+          attributes/parameters which can be used to create custom audience to
+          engage them with personalized content.
+        </p>
+        <div class="elementor-facebookdata-img">
+          <img src="./Assets/facebook-stats-img.webp" alt="" />
+        </div>
+        <div class="blog-demo">
+          <img src="./Assets/Blog-Demo.png.webp" alt="" />
+        </div>
+      </div>
+      <div class="feedback-info">
+        <div class="feedback-title">
+          <h4>What do you think</h4>
+          <p>7 Res</p>
+          <div class="vote">
+            <button class="vote-btn">Upvote</button>
+            <button class="vote-btn">Loved It</button>
+          </div>
+        </div>
+        <div class="feedback-flex1">
+          <div class="feedback-nav-row1">
+            <ul>
+              <li><b>O Comments</b></li>
+              <li><b>CustomerLabs</b></li>
+              <li><b>Disqus' Privacy Policy</b></li>
+            </ul>
+             <div class="login">
+            <i class="fas fa-comment"></i>
+            <p>Login</p>
+            </div>
+          </div>
+          <div class="feedback-nav-row2">
+            <div class="recommend-container">
+              <i class="far fa-heart"></i>
+              <p>Recommend</p>
+            </div>
+            <button class="icon-btn icon icon-btn1">
+              <i class="fab fa-twitter"></i><span>Tweet</span>
+            </button>
+            <button class="icon-btn icon-btn2">
+              <i class="fab fa-facebook-f"></i><span>Share</span>
+            </button>
+            <p>Sort by</p>
+          </div>
+          <div class="discussion-container">
+            <div class="user-img">
+              <img src="./Assets/noavatar92.png" alt="" />
+            </div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Start the discussion..."
+            />
+          </div>
+        </div>
+        <div class="login-container">
+          <div class="login-col1">
+            <p>Log in with</p>
+            <div class="login-icons">
+              <a href="" cla>
+                <i class="fab fa-discourse login-icon disqus-btn"></i
+              ></a>
+              <a href=""> <i class="fab fa-facebook login-icon fb-btn"></i></a>
+              <a href="">
+                <i class="fab fa-twitter login-icon twitter-btn"></i
+              ></a>
+              <a
+                ><i class="fab fa-google google-icon login-icon google-btn"></i
+              ></a>
+            </div>
+          </div>
+          <div class="login-col2">
+            <p>Or SignUp with Disquos</p>
+            <input type="text" name="" id="" placeholder="Name" />
+          </div>
+        </div>
+        <p class="comment">Be the first to comment</p>
+        <div class="disqus-row">
+          <div class="disqus-btn-container">
+            <button class="disqus-row-btn">
+              <i class="fas fa-envelope-open-text"></i><span>Subscribe </span>
+            </button>
+            <button class="disqus-row-btn">
+              <i class="fab fa-discourse"></i>
+              <span>Add disqus to your site</span>
+            </button>
+            <button class="disqus-row-btn">
+              <i class="fas fa-exclamation"></i>
+              <span>Do not sell my Data</span>
+            </button>
+          </div>
+          <div class="disqus-link">
+            <a href="">DISQUS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="create-account-wrapper">
+        <h2>
+          CustomerLabs gives freedom, flexibility and wings to digital
+          marketers.
+        </h2>
+        <button class="newacc-btn">CREATE A FREE ACCOUNT</button>
+      </div>
+      <div class="footer-wrapper ">
+         <div class="list-container">
+        <div class="wrapper-row-list col1">
+          <ul>
+        <li> <h2>CustomerLabs</h2></li> 
+         <li><p>Digital Marketing Infrastructure for Marketing teams.</p></li> 
+        </ul>
+        </div>
+        <div class="wrapper-row-list">
+              <ul>
+          <p>CustomerLabs CDP</p>
+      
+            <li><a href="">Overview</a></li>
+            <li><a href="">Ecommerce</a></li>
+            <li><a href="">B2B</a></li>
+            <li><a href="">SaaS</a></li>
+            <li><a href="">Agency</a></li>
+            <li><a href="">Playbooks</a></li>
+            <li><a href="">Integrations</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Videos</a></li>
+          </ul>
+        </div>
+            <div class="wrapper-row-list">
+              <ul>
+              <p>Marketing Insights</p>
+              
+                <li><a href="">Overview</a></li>
+                <li><a href="">Ecommerce</a></li>
+                <li><a href="">B2B</a></li>
+                <li><a href="">SaaS</a></li>
+                <li><a href="">Agency</a></li>
+                <li><a href="">Reports</a></li>
+              </ul>
+            </div>
+            <div class="wrapper-row-list">
+              <ul>
+              <p>Company</p>
+              
+                <li><a href="">About us</a></li>
+                <li><a href="">Docs</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Careers</a></li>
+              </ul>
+            </div>
+            <div class="wrapper-row-list blog">
+               <ul>
+              <p>BLOG</p>
+             
+              <li><a href="">How to setup E-commerce Event Tracking and Integrate with Facebook Custom Audience</a></li>
+              <li><a href="">In 10 minutes – How to Send Data from Instapage to Salesforce, HubSpot, Freshsales, Intercom, Slac</a></li>
+              <li><a href="">How to setup WooCommerce event tracking in Google Analytics and Facebook pixel</a></li>
+              </ul>
+            </div>
+            </div>
+      </div>
+            <footer>
+              <div class="copyrights">
+                <p>© 2021, Customer Labs Inc. All rights reserved.</p>
+              </div>
+              <div class="policies">
+                <a href=""><p>Privacy policy</p></a>
+                <a href=""><p>Terms & conditions</p></a>
+              </div>
+
+            </footer>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
